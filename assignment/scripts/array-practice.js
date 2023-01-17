@@ -69,7 +69,8 @@ animalArray.unshift('walrus');
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
-
+favoriteFoods.unshift('curry');
+console.log('added to the front of array is ',favoriteFoods);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -78,20 +79,47 @@ console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
+removedFoods = favoriteFoods.shift();
+console.log('this was the food removed from the front ',removedFoods);
+console.log('the new array is now this ',favoriteFoods);
 
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+console.log('current array is ',favoriteFoods);
+favoriteFoods.splice(1,1);
+console.log('confirming splice works for this ', favoriteFoods);
+
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-
+favoriteFoods.reverse();
+console.log('is this reveresed ',favoriteFoods);
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+/*
+let food = 0;
+console.log('this is the current value of the index' , food);
+console.log('this is the length of array ' ,favoriteFoods.length);
+for (food  in favoriteFoods, food < favoriteFoods.length, food);
+{console.log('this is the current value of the index', food);
+console.log('this is the length of array ' ,favoriteFoods.length);
+favoriteFoods.splice(food<favoriteFoods.length , 0,' and ');
+console.log(favoriteFoods)
+console.log(favoriteFoods.length)
+food ++;
+};
+
+*/
+
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
+both = favoriteFoods.concat(animalArray);
+console.log(both)
