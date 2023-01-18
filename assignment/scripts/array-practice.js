@@ -118,9 +118,9 @@ console.log(favoriteFoods)
 stringfood = favoriteFoods.toString();
 console.log(stringfood);
 
-stringfood.replace(",", ", and ");
+stringfood = stringfood.replaceAll(",", ", and ");
 console.log(stringfood.replaceAll(",", ", and "));
-
+console.log(stringfood)
 //not the method i wanted to use but it did work 
 
 
