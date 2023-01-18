@@ -112,15 +112,18 @@ console.log(favoriteFoods.length)
 food ++;
 };
 
-*/
+*/ //this did not work found better methods. 
 
 console.log(favoriteFoods)
 stringfood = favoriteFoods.toString();
 console.log(stringfood);
 
-stringfood = stringfood.replaceAll(",", ", and ");
-console.log(stringfood.replaceAll(",", ", and "));
+stringfood = stringfood.replaceAll(",", " and ");
+//console.log(stringfood.replaceAll(",", ", and "));
 console.log(stringfood)
+
+//this is the fastest method. 
+console.log(favoriteFoods.join(' and '))
 //not the method i wanted to use but it did work 
 
 
@@ -130,5 +133,7 @@ console.log(stringfood)
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
 
+
 both = favoriteFoods.concat(animalArray);
 console.log(both)
+
