@@ -114,6 +114,15 @@ food ++;
 
 */
 
+console.log(favoriteFoods)
+stringfood = favoriteFoods.toString();
+console.log(stringfood);
+
+stringfood.replace(",", ", and ");
+console.log(stringfood.replaceAll(",", ", and "));
+
+//not the method i wanted to use but it did work 
+
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
